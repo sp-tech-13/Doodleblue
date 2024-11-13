@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Sandbox</title>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+    <script defer src="../index.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <header>
+        <div class="container">
+          <div class="menu-toggle">
+            <i class="fa fa-bars"></i>
+          </div>
+          <a href="../index.html" class="logo-link">
+            <div class="logo">
+                / E N I A
+            </div>
+        </a>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Electronics</a></li>
+              <li><a href="#">Jewellery</a></li>
+            </ul>
+          </nav>
+          <div class="cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">10</span>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="sub-header">
+      <div class="rightContentSub">
+        <div>
+          <span
+            >Men's <br />
+            Outerwear</span
+          >
+        </div>
+      </div>
+      <img src="../images/subHeaderImg.png" />
+    </div>
+    <div class="product-list">
+      <div class="filters">
+        <span>Clothing / Women's / Outerwear</span>
+        <h5>Filters</h5>
+        <hr />
+        <h5>Categories</h5>
+        <div class="filterCat">
+          <div id="filtersContainer" class="categories-list">
+            <!-- Categories will be dynamically inserted here -->
+          </div>
+        </div>
+        <hr />
+        <h5>Price Range</h5>
+        <div class="filterPrice">
+          <div id="priceRange" class="priceRange">
+            <input
+              type="range"
+              min="0"
+              max="1000"
+              value="0"
+              id="minPrice"
+              class="slider"
+            />
+            <input
+              type="range"
+              min="0"
+              max="1000"
+              value="1000"
+              id="maxPrice"
+              class="slider"
+            />
+            <div class="priceValues">
+              <span id="minPriceValue">0</span> -
+              <span id="maxPriceValue">1000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="loading-overlay">
+        <p>Loading...</p>
+      </div>
+      <div>
+        <div class="productDet">
+          <span id="totalProductCount"></span>
+          <div>
+            <input type="search" id="productSearch" placeholder="search here" />
+          </div>
+          <div class="sortOptions">
+            <select>
+              <option selected disabled>Select</option>
+              <option>Ratings</option>
+              <option>Price -- Low to High</option>
+              <option>Price -- High to Low</option>
+            </select>
+          </div>
+        </div>
+        <div class="products-container">
+          <!-- Products will be dynamically inserted here -->
+        </div>
+      </div>
+    </div>
+    <div class="load-more">
+      <button>Load More</button>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <div>
+          <span>Account</span>
+          <ul>
+            <li>Sign in</li>
+            <li>Register</li>
+            <li>Order Status</li>
+          </ul>
+        </div>
+        <div>
+          <span>About Us</span>
+          <ul>
+            <li>Our Story</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div>
+          <span>Help</span>
+          <ul>
+            <li>Contact Us</li>
+            <li>Order Status</li>
+            <li>Returns</li>
+          </ul>
+        </div>
+        <div>
+          <span>Follow us!</span>
+          <ul>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>VENIA</p>
+        <p>@Company Name Address, Ave, City Name, State ZIP</p>
+        <p><span>Terms of use</span> <span>Privacy Policy</span></p>
+      </div>
+    </footer>
+  </body>
+</html>
